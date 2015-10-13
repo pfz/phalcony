@@ -118,7 +118,7 @@ class Application extends \Phalcon\Mvc\Application
 
                     if (is_callable($class)) {
                         $shared = true;
-                        $service = $class($this);
+                        $service = $class;
                     } else if (is_object($class)) {
                         $shared = true;
                         $service = $class;
